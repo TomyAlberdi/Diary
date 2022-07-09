@@ -43,7 +43,8 @@ header .logo {
   justify-content: center;
   width: 7vw;
   height: 100%;
-  border-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 header .logo a img {
   width: 7vh;
@@ -83,7 +84,7 @@ main section {
   width: 32vw;
   padding: 18px 25px;
 }
-main section article {
+main section .info-material, main section .info-usuario {
   background-color: #19304d;
   border-radius: 20px;
   margin-top: 2vh;
@@ -93,12 +94,13 @@ main section article {
   flex-direction: row;
   justify-content: space-between;
   gap: 1.5vh;
+  height: 13vw;
 }
-main section article img {
-  width: 50%;
+main section .info-material img, main section .info-usuario img {
+  height: 13vw;
   border-radius: 20px;
 }
-main section article .info {
+main section .info-material .info, main section .info-usuario .info {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -107,6 +109,14 @@ main section article .info {
   height: 13vw;
   width: 50%;
   font-size: 1.2rem;
+  text-align: center;
+}
+main section .info-usuario {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 19vw;
 }
 
 body {

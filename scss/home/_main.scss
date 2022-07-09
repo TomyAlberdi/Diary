@@ -11,15 +11,16 @@ main {
         height: 83vh;
         width: 32vw;
         padding: 18px 25px;
-        article {
+        .info-material {
             background-color: #19304d;
             border-radius: 20px;
             margin-top: 2vh;
             width: 30vw;
             @include mixins.flex-container(row,space-between,center);
             gap: 1.5vh;
+            height: 13vw;
             img {
-                width: 50%;
+                height: 13vw;
                 border-radius: 20px;
             }
             .info {
@@ -28,7 +29,13 @@ main {
                 height: 13vw;
                 width: 50%;
                 font-size: 1.2rem;
+                text-align: center
             }
+        }
+        .info-usuario {
+            @extend .info-material;
+            @include mixins.flex-container(column,space-around,center);
+            height: 19vw;
         }
     }
 }

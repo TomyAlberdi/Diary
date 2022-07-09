@@ -36,7 +36,8 @@ header {
         @extend .hover;
         width: 7vw;
         height: 100%;
-        border-radius: 12px;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
         a img {
             width: 7vh;
         }
