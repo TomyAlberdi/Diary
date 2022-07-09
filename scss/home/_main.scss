@@ -12,6 +12,8 @@ main {
         width: 32vw;
         padding: 18px 25px;
         article {
+            background-color: #19304d;
+            border-radius: 20px;
             margin-top: 2vh;
             width: 30vw;
             @include mixins.flex-container(row,space-between,center);
@@ -21,7 +23,11 @@ main {
                 border-radius: 20px;
             }
             .info {
+                @include mixins.flex-container(column,center,center);
+                gap: 3vh;
                 height: 13vw;
+                width: 50%;
+                font-size: 1.2rem;
             }
         }
     }

@@ -84,6 +84,8 @@ main section {
   padding: 18px 25px;
 }
 main section article {
+  background-color: #19304d;
+  border-radius: 20px;
   margin-top: 2vh;
   width: 30vw;
   display: flex;
@@ -97,7 +99,14 @@ main section article img {
   border-radius: 20px;
 }
 main section article .info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3vh;
   height: 13vw;
+  width: 50%;
+  font-size: 1.2rem;
 }
 
 body {
