@@ -1,0 +1,28 @@
+@use "../components/mixins";
+
+$background: linear-gradient( 96.5deg,  rgba(39,103,187,1) 10.4%, rgba(16,72,144,1) 87.7% );
+
+main {
+    @include mixins.flex-container(row,space-between,flex-start);
+    margin-top: 1.5vh;
+    section {
+        @include mixins.flex-container(column,flex-start,center);
+        @include mixins.neomorph($background,#132439,#19304d);
+        height: 83vh;
+        width: 32vw;
+        padding: 18px 25px;
+        article {
+            margin-top: 2vh;
+            width: 30vw;
+            @include mixins.flex-container(row,space-between,center);
+            gap: 1.5vh;
+            img {
+                width: 50%;
+                border-radius: 20px;
+            }
+            .info {
+                height: 13vw;
+            }
+        }
+    }
+}

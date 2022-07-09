@@ -1,7 +1,9 @@
 @use "./home/_header.scss";
+@use "./home/footer.scss";
+@use "./home/main.scss";
 
 body {
     display: flex;
     flex-direction: column;
-    padding: 2vh;
+    padding: 1.5vh;
 }
