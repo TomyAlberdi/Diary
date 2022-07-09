@@ -1,0 +1,12 @@
+@mixin flex-container ($direction: row, $space: around, $items: center) {
+    display: flex;
+    align-items: $items;
+    flex-direction: $direction;
+    justify-content: $space;    
+}
+
+@mixin neomorph ($backround, $color_principal, $color_secundario) {
+    border-radius: 25px;
+    background: $color;
+    box-shadow:  5px 5px 10px $color_principal, -5px -5px 10px $color_secundario;
+}

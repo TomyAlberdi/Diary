@@ -1,0 +1,44 @@
+@use "../components/mixins";
+
+$background: linear-gradient( 96.5deg,  rgba(39,103,187,1) 10.4%, rgba(16,72,144,1) 87.7% );
+
+header {
+    @include mixins.flex-container(row, space-between, center);
+    height: 13.5vh;
+    background-image: $background;
+    nav {
+        height: inherit;
+        width: 90vw;
+        ul {
+            @extend nav;
+            @include mixins.flex-container(row,flex-start,center);
+            list-style-type: none;
+            li {
+                @include mixins.flex-container(row,center,center);
+                height: 100%;
+                width: 17%;
+                font-size: 1.7rem;
+                @extend .hover;
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                }
+            }
+        }
+    }
+    .logo {
+        @include mixins.flex-container(row,center,center);
+        @extend .hover;
+        width: 7vw;
+        height: 100%;
+        a img {
+            width: 10vh;
+        }
+    }
+}
+
+.hover:hover {
+    cursor: pointer;
+    background-color: #0e3d7a;
+    transition: all 0.3s ease-in;
+}

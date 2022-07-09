@@ -1,0 +1,7 @@
+@use "./home/_header.scss";
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+}

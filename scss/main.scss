@@ -1,0 +1,15 @@
+@use "_desktop.scss";
+@use "_mobile.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Nunito:wght@200&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: #222222;
+    color: white;
+}
