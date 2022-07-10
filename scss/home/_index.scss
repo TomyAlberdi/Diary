@@ -1,7 +1,6 @@
 @use "../components/mixins";
 @use "../components/animations";
-
-$background: linear-gradient( 96.5deg,  rgba(39,103,187,1) 10.4%, rgba(16,72,144,1) 87.7% );
+@use "../components/colors";
 
 .index-main {
     @include mixins.flex-container(row,flex-start,flex-start);
@@ -9,7 +8,12 @@ $background: linear-gradient( 96.5deg,  rgba(39,103,187,1) 10.4%, rgba(16,72,144
     gap: 1.5vw;
     section {
         @include mixins.flex-container(column,flex-start,center);
-        @include mixins.neomorph($background);
+        &:nth-child(1){
+            @include mixins.neomorph(colors.$gradient_red);
+        }
+        &:nth-child(2){
+            @include mixins.neomorph(colors.$gradient_pink);
+        }
         height: 83vh;
         width: 32vw;
         padding: 18px 25px;
