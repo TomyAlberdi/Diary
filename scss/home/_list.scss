@@ -1,0 +1,47 @@
+@use "../components/mixins";
+
+$gradient_red: radial-gradient( circle 860px at 11.8% 33.5%,  rgba(240,30,92,1) 0%, rgba(244,49,74,1) 30.5%, rgba(249,75,37,1) 56.1%, rgba(250,88,19,1) 75.6%, rgba(253,102,2,1) 100.2% );
+$gradient_purple: linear-gradient( 109.6deg,  rgba(118,12,99,1) 11.2%, rgba(71,11,75,1) 98.6% );
+$gradient_orange: linear-gradient( 109.6deg,  rgba(231,76,60,1) 11.2%, rgba(203,67,53,1) 91.1% );
+$gradient_grey: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
+$gradient_lightblue: linear-gradient( 109.6deg,  rgba(24,138,141,1) 11.2%, rgba(96,221,142,1) 91.1% );
+
+.list-main {
+    @include mixins.flex-container(row,space-around,center);
+    gap: 1vw;
+    .columna {
+        @include mixins.flex-container(column,space-around,center);
+        .album {
+            width: 31.5vw;
+            height: 30vh;
+            border-radius: 20px;
+            padding: 18px 25px;
+            margin-top: 1vw;
+            &-red { 
+                @extend .album; 
+                background-image: $gradient_red; 
+                @include mixins.neomorph(#f4314a);
+            }
+            &-purple { 
+                @extend .album; 
+                background-image: $gradient_purple; 
+                @include mixins.neomorph(#470b4b);
+            }
+            &-orange { 
+                @extend .album; 
+                background-image: $gradient_orange;
+                @include mixins.neomorph(#cb4335);
+            }
+            &-lightblue { 
+                @extend .album; 
+                background-image: $gradient_lightblue;
+                @include mixins.neomorph(#515473);
+            }
+            &-grey { 
+                @extend .album; 
+                background-image: $gradient_grey;
+                @include mixins.neomorph(#60dd8e);
+            }
+        }
+    }
+}

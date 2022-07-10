@@ -3,13 +3,13 @@
 
 $background: linear-gradient( 96.5deg,  rgba(39,103,187,1) 10.4%, rgba(16,72,144,1) 87.7% );
 
-main {
+.index-main {
     @include mixins.flex-container(row,flex-start,flex-start);
     margin-top: 1.5vh;
     gap: 1.5vw;
     section {
         @include mixins.flex-container(column,flex-start,center);
-        @include mixins.neomorph($background,#132439,#19304d);
+        @include mixins.neomorph($background);
         height: 83vh;
         width: 32vw;
         padding: 18px 25px;

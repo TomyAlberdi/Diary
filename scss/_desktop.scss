@@ -1,10 +1,22 @@
 @use "./home/_header.scss";
-@use "./home/footer.scss";
-@use "./home/main.scss";
+@use "./home/_footer.scss";
+
+@use "./home/_index.scss";
+@use "./home/list";
 
 body {
     display: flex;
     flex-direction: column;
     padding: 1.5vh;
     position: relative;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background: rgb(22, 42, 67);
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(16,72,144,1);
 }
